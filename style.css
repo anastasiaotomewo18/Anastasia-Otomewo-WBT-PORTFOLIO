@@ -1,0 +1,153 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    text-align: center;
+    background-color: #177402a8;
+}
+
+/* NAVBAR */
+nav {
+    background: #613701c3;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* PROJECT GALLERY (FLEXBOX) */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+
+/* RESPONSIVE (PHONE) */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: row;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+.profile-container {
+    flex-direction: column;
+}
+
+.profile-text {
+    text-align: center;
+}
+.hero {
+    background: linear-gradient(to right, rgba(243, 163, 223, 0.904), rgba(99, 135, 0, 0.704));
+    color: rgba(252, 250, 250, 0.943);
+    padding: 60px 20px;
+}
+.gallery div {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+form {
+    background: rgba(101, 59, 0, 0.709);
+    padding: 20px;
+    margin: 50px auto;
+    width: 300px;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    background: rgba(59, 121, 0, 0.67);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: pink;
+}
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-pic {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.profile-text {
+    max-width: 100%;
+    text-align: center;
+}
+
+.skills {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: rgba(120, 62, 0, 0.79);
+    color: white;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+.skills li {
+    background: #ffffff00;
+}
+.skills li:hover {
+    background: pink;
+}
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+body {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
